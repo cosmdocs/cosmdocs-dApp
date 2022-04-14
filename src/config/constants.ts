@@ -13,8 +13,7 @@ export const STATION = "https://station.terra.money"
 export const FINDER = "https://terrascope.info"
 export const EXTENSION =
   "https://chrome.google.com/webstore/detail/aiifbnbfobpmeekipheeijimdpnlpgpp"
-export const TUTORIAL =
-  "https://docs.terra.money/Tutorials/Get-started/Terra-Station-desktop.html"
+export const DOCUMENTATION = "https://contract-station.idocs.onchain.engineer"
 
 /* website: stake */
 export const TERRA_VALIDATORS =

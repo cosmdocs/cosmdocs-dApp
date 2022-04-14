@@ -5,18 +5,15 @@ import { useNavigate, useRoutes } from "react-router-dom"
 import { ReactComponent as WalletIcon } from "styles/images/menu/Wallet.svg"
 import { ReactComponent as NFTIcon } from "styles/images/menu/NFT.svg"
 import { ReactComponent as HistoryIcon } from "styles/images/menu/History.svg"
-import { ReactComponent as SwapIcon } from "styles/images/menu/Swap.svg"
-import { ReactComponent as StakeIcon } from "styles/images/menu/Stake.svg"
-import { ReactComponent as GovernanceIcon } from "styles/images/menu/Governance.svg"
 import { ReactComponent as ContractIcon } from "styles/images/menu/Contract.svg"
 
 /* menu */
 import Dashboard from "pages/dashboard/Dashboard"
+import Studio from "pages/studio/Studio"
 import Wallet from "pages/wallet/Wallet"
-import NFT from "pages/nft/NFT"
+import Models from "pages/models/Studio"
+import Templates from "pages/templates/Studio"
 import History from "pages/history/History"
-import Stake from "pages/stake/Stake"
-import Governance from "pages/gov/Governance"
 import Contract from "pages/contract/Contract"
 
 /* details */
@@ -26,7 +23,6 @@ import ProposalDetails from "pages/gov/ProposalDetails"
 /* txs */
 import SendTx from "txs/send/SendTx"
 import TransferCW721Tx from "txs/wasm/TransferCW721Tx"
-import SwapTx from "txs/swap/SwapTx"
 import SwapMultipleTx from "txs/swap/SwapMultipleTx"
 import StakeTx from "txs/stake/StakeTx"
 import WithdrawRewardsTx from "txs/stake/WithdrawRewardsTx"
@@ -63,9 +59,27 @@ export const useNav = () => {
 
   const menu = [
     {
+      path: "/studio",
+      element: <Studio />,
+      title: t("Studio"),
+      icon: <NFTIcon {...ICON_SIZE} />,
+    },
+    {
       path: "/wallet",
       element: <Wallet />,
       title: t("Wallet"),
+      icon: <WalletIcon {...ICON_SIZE} />,
+    },
+    {
+      path: "/templates",
+      element: <Templates />,
+      title: t("Templates"),
+      icon: <WalletIcon {...ICON_SIZE} />,
+    },
+    {
+      path: "/models",
+      element: <Models />,
+      title: t("Models"),
       icon: <WalletIcon {...ICON_SIZE} />,
     },
     {
@@ -73,30 +87,6 @@ export const useNav = () => {
       element: <History />,
       title: t("History"),
       icon: <HistoryIcon {...ICON_SIZE} />,
-    },
-    {
-      path: "/swap",
-      element: <SwapTx />,
-      title: t("Swap"),
-      icon: <SwapIcon {...ICON_SIZE} />,
-    },
-    {
-      path: "/stake",
-      element: <Stake />,
-      title: t("Stake"),
-      icon: <StakeIcon {...ICON_SIZE} />,
-    },
-    {
-      path: "/gov",
-      element: <Governance />,
-      title: t("Governance"),
-      icon: <GovernanceIcon {...ICON_SIZE} />,
-    },
-    {
-      path: "/nft",
-      element: <NFT />,
-      title: t("NFT"),
-      icon: <NFTIcon {...ICON_SIZE} />,
     },
     {
       path: "/contract",
