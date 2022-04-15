@@ -16,7 +16,6 @@ import Aside from "./sections/Aside"
 /* header */
 import Refresh from "./sections/Refresh"
 import Preferences from "./sections/Preferences"
-import SelectTheme from "./sections/SelectTheme"
 import ConnectWallet from "./sections/ConnectWallet"
 
 /* extra */
@@ -46,7 +45,6 @@ const App = () => {
         <section>
           <Refresh />
           <Preferences />
-          <SelectTheme />
         </section>
         <ValidatorButton />
         <ConnectWallet />
