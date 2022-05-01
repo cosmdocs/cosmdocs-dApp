@@ -143,19 +143,15 @@ class TopMenu extends React.Component {
     const EMPTY_CLAUSE_TEMPLATE = `${ROOT_URI}/static/archives/empty@0.9.0.cta`;
 
     return (
-      <Menu fixed="top" inverted style={{ background: '#1b2540'}}>
+      <Menu dynamic="top" inverted style={{ background: '#E8E8E8'}}>
         <Container fluid>
-          <Menu.Item header>
-            <Image size="small" href="#" src="static/img/logo.png" style={{ marginRight: '1.5em' }} target="_blank" />
-            Contract Station
-          </Menu.Item>
           <Menu.Item>
             <Confirm content="Your template has been edited, are you sure you want to load a new one? You can save your current template by using the Export button." confirmButton="I am sure" cancelButton="Cancel" open={this.state.confirm.flag} onCancel={this.handleSelectTemplateAborted} onConfirm={this.handleSelectTemplateConfirmed} />
             <Dropdown
-              style={{ width: '270px' }}
+              style={{ width: '512px' }}
               icon="search"
               className="ui icon fixed"
-              text="Search Contract Library"
+              text="Search CosmDocs Contract Library"
               labeled
               button
               search
@@ -164,7 +160,7 @@ class TopMenu extends React.Component {
             />
           </Menu.Item>
           <Menu.Item>
-            <Dropdown item text="New Template" simple>
+            <Dropdown item text="New Template" background-color="black" simple>
               <Dropdown.Menu>
                 <Confirm content="Your template has been edited, are you sure you want to load a new one? You can save your current template by using the Export button." confirmButton="I am sure" cancelButton="Cancel" open={this.state.confirmNew.flag} onCancel={this.handleNewAborted} onConfirm={this.handleNewConfirmed} />
                 <Menu.Item onClick={() => this.handleNewChange(EMPTY_CONTRACT_TEMPLATE)}>
