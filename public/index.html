@@ -7,9 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="icon" id="favicon" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"></link>
+    <link rel="stylesheet" href="static/css/codemirror.css">
+    <link rel="stylesheet" href="static/css/eclipse.css">
+    <link rel="stylesheet" href="static/css/gh-fork-ribbon.min.css" />
+    <link rel="icon" type="image/png" href="static/favicon.png">
     <title>CosmDocs Station</title>
   </head>
-  <body>
+  <body  >
     <div id="station"></div>
+<div class="Site">
+    <main class="Site-content">
+      <div id="create-article-form">
+        <!-- form -->
+      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <!-- for codemirror support -->
+      <script src="static/js/codemirror.js"></script>
+      <script src="static/js/simple.js"></script>
+      <script src="static/js/matchbrackets.js"></script>
+      <!-- for Ergo execution -->
+      <script src="static/js/cheatsheet.js"></script>
+    </main>
+  </div>
   </body>
 </html>

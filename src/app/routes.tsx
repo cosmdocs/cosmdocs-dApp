@@ -15,6 +15,7 @@ import Models from "pages/models/Studio"
 import Templates from "pages/templates/Studio"
 import History from "pages/history/History"
 import Contract from "pages/contract/Contract"
+import TemplateStudio from "pages/TemplateStudio"
 
 /* details */
 import ValidatorDetails from "pages/stake/ValidatorDetails"
@@ -60,7 +61,7 @@ export const useNav = () => {
   const menu = [
     {
       path: "/studio",
-      element: <Studio />,
+      element: <TemplateStudio />,
       title: t("Studio"),
       icon: <NFTIcon {...ICON_SIZE} />,
     },
@@ -72,7 +73,7 @@ export const useNav = () => {
     },
     {
       path: "/templates",
-      element: <Templates />,
+      element: <Studio />,
       title: t("Templates"),
       icon: <WalletIcon {...ICON_SIZE} />,
     },
