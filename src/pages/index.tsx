@@ -2,9 +2,12 @@ import type { NextPage } from "next"
 import { useState } from "react"
 import { useRouter } from "utils/hooks/useRouter"
 import WalletLoader from "components/WalletLoader"
+import { useNavigate } from "react-router-dom"
 
 const Home: NextPage = () => {
   const router = useRouter()
+  const navigate = useNavigate()
+  console.log(router)
   const [address, setAddress] = useState("")
 
   return (
@@ -22,7 +25,7 @@ const Home: NextPage = () => {
                 value={address}
                 onKeyDown={(event) => {
                   if (event.key === "Enter") {
-                    router.push(`/${event.currentTarget.value}`)
+                    navigate(`/${event.currentTarget.value}`)
                   }
                 }}
                 onChange={(event) => setAddress(event.target.value)}
@@ -33,7 +36,7 @@ const Home: NextPage = () => {
                   const inputEl = document.getElementById(
                     "multisig-address"
                   ) as HTMLInputElement
-                  router.push(`/${inputEl.value}`)
+                  navigate(`/${inputEl.value}`)
                 }}
               >
                 GO

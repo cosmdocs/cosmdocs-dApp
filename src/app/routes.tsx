@@ -16,7 +16,7 @@ import Templates from "pages/templates/Studio"
 import History from "pages/history/History"
 import Contract from "pages/contract/Contract"
 import TemplateStudio from "pages/TemplateStudio"
-import MyApp from "pages/_app"
+import Home from "pages/index"
 
 /* details */
 import ValidatorDetails from "pages/stake/ValidatorDetails"
@@ -74,7 +74,7 @@ export const useNav = () => {
     },
     {
       path: "/templates",
-      element: <Studio />,
+      element: <Home />,
       title: t("Templates"),
       icon: <WalletIcon {...ICON_SIZE} />,
     },
