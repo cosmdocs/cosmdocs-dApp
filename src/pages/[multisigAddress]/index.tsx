@@ -18,6 +18,7 @@ const Home: NextPage = () => {
   const router = useRouter()
   const navigate = useNavigate()
   const multisigAddress = router.query.multisigAddress as string
+  console.log(multisigAddress)
 
   const connectedWallet = useConnectedWallet()
 

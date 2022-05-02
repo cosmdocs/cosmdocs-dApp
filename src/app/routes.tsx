@@ -18,6 +18,9 @@ import Contract from "pages/contract/Contract"
 import TemplateStudio from "pages/TemplateStudio"
 import Home from "pages/index"
 import CreateMultisig from "pages/create"
+import ExistMultisig from "pages/[multisigAddress]/index"
+import Proposal from "pages/[multisigAddress]/[proposalId]"
+import ProposalCreate from "pages/[multisigAddress]/create"
 
 /* details */
 import ValidatorDetails from "pages/stake/ValidatorDetails"
@@ -111,6 +114,9 @@ export const useNav = () => {
     { path: "/multisig/sign", element: <SignMultisigTxPage /> },
     { path: "/multisig/post", element: <PostMultisigTxPage /> },
     { path: "/create", element: <CreateMultisig /> },
+    { path: "/:multisigAddress", element: <ExistMultisig /> },
+    { path: "/:multisigAddress/create", element: <ProposalCreate /> },
+    { path: "/:multisigAddress/:proposalId", element: <Proposal /> },
 
     /* txs */
     { path: "/send", element: <SendTx /> },
