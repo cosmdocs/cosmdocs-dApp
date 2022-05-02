@@ -16,6 +16,7 @@ import Templates from "pages/templates/Studio"
 import History from "pages/history/History"
 import Contract from "pages/contract/Contract"
 import TemplateStudio from "pages/TemplateStudio"
+import MyApp from "pages/_app"
 
 /* details */
 import ValidatorDetails from "pages/stake/ValidatorDetails"
