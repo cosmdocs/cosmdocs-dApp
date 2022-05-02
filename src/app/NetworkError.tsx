@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import Logo from "styles/images/LocalTerra.png"
+//import Logo from "styles/images/LocalTerra.png"
 import { useNetworkState } from "data/wallet"
 import { Button, ExternalLink } from "components/general"
 import { FlexColumn } from "components/layout"
@@ -13,8 +13,6 @@ const NetworkError = () => {
 
   return (
     <FlexColumn gap={20}>
-      <img src={Logo} alt={t("Logo")} width={60} height={60} />
-
       <article>
         <h1 className={styles.title}>
           {network === "mainnet"

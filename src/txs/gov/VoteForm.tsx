@@ -7,7 +7,7 @@ import { useAddress } from "data/wallet"
 import { useBankBalance } from "data/queries/bank"
 import { useGetVoteOptionItem } from "data/queries/gov"
 import { Form } from "components/form"
-import useProposalId from "pages/gov/useProposalId"
+import useProposalId from "pages/claim/useProposalId"
 import Tx, { getInitialGasDenom } from "../Tx"
 import styles from "./VoteForm.module.scss"
 

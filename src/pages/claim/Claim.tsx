@@ -3,12 +3,12 @@ import { LinkButton } from "components/general"
 import { Page } from "components/layout"
 import Proposals from "./Proposals"
 
-const Governance = () => {
+const Claim = () => {
   const { t } = useTranslation()
 
   return (
     <Page
-      title="Governance"
+      title="Claims"
       extra={
         <LinkButton to="/proposal/new" color="primary" size="small">
           {t("New proposal")}
@@ -20,4 +20,4 @@ const Governance = () => {
   )
 }
 
-export default Governance
+export default Claim

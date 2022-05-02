@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next"
 import { useProposal } from "data/queries/gov"
 import { Auto, Page, Card } from "components/layout"
-import useProposalId from "pages/gov/useProposalId"
-import ProposalHeader from "pages/gov/ProposalHeader"
+import useProposalId from "pages/claim/useProposalId"
+import ProposalHeader from "pages/claim/ProposalHeader"
 import TxContext from "../TxContext"
 import DepositForm from "./DepositForm"
 

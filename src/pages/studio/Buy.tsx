@@ -5,8 +5,8 @@ import { ReactComponent as Binance } from "styles/images/exchanges/Binance.svg"
 import { ReactComponent as KuCoin } from "styles/images/exchanges/KuCoin.svg"
 import { ReactComponent as Huobi } from "styles/images/exchanges/Huobi.svg"
 import { ReactComponent as Bitfinex } from "styles/images/exchanges/Bitfinex.svg"
-import Transak from "styles/images/exchanges/Transak.png"
-import Kado from "styles/images/exchanges/Kado.svg"
+//import Transak from "styles/images/exchanges/Transak.png"
+//import Kado from "styles/images/exchanges/Kado.svg"
 import { ListGroup } from "components/display"
 
 export const exchanges = {
@@ -79,13 +79,11 @@ const Buy = ({ token }: { token: "uluna" | "uusd" }) => {
   const TRANSAK = {
     children: "Transak",
     href: getTransakLink(token),
-    icon: <img src={Transak} alt="" width={24} height={24} />,
   }
 
   const KADO = {
     children: "Kado Ramp",
     href: KADO_URL,
-    icon: <img src={Kado} alt="Kado Ramp" width={24} height={24} />,
   }
 
   return (

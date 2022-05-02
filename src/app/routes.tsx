@@ -15,10 +15,12 @@ import Models from "pages/models/Studio"
 import Templates from "pages/templates/Studio"
 import History from "pages/history/History"
 import Contract from "pages/contract/Contract"
+import Claims from "pages/claim/Claim"
+import Hello from "pages/hello"
 
 /* details */
 import ValidatorDetails from "pages/stake/ValidatorDetails"
-import ProposalDetails from "pages/gov/ProposalDetails"
+import ProposalDetails from "pages/claim/ProposalDetails"
 
 /* txs */
 import SendTx from "txs/send/SendTx"
@@ -83,6 +85,12 @@ export const useNav = () => {
       icon: <WalletIcon {...ICON_SIZE} />,
     },
     {
+      path: "/claims",
+      element: <Claims />,
+      title: t("Claims"),
+      icon: <ContractIcon {...ICON_SIZE} />,
+    },
+    {
       path: "/history",
       element: <History />,
       title: t("History"),
@@ -92,6 +100,12 @@ export const useNav = () => {
       path: "/contract",
       element: <Contract />,
       title: t("Contract"),
+      icon: <ContractIcon {...ICON_SIZE} />,
+    },
+    {
+      path: "/hello",
+      element: <Hello />,
+      title: t("Hello"),
       icon: <ContractIcon {...ICON_SIZE} />,
     },
   ]
