@@ -17,6 +17,7 @@ import History from "pages/history/History"
 import Contract from "pages/contract/Contract"
 import TemplateStudio from "pages/TemplateStudio"
 import Home from "pages/index"
+import CreateMultisig from "pages/create"
 
 /* details */
 import ValidatorDetails from "pages/stake/ValidatorDetails"
@@ -109,6 +110,7 @@ export const useNav = () => {
     /* multisig */
     { path: "/multisig/sign", element: <SignMultisigTxPage /> },
     { path: "/multisig/post", element: <PostMultisigTxPage /> },
+    { path: "/create", element: <CreateMultisig /> },
 
     /* txs */
     { path: "/send", element: <SendTx /> },

@@ -7,6 +7,7 @@ import LineAlert from "components/LineAlert"
 import { InstantiateMsg, Voter } from "types/cw3"
 import { MsgInstantiateContract, LCDClient } from "@terra-money/terra.js"
 import { useConnectedWallet, useWallet } from "@terra-money/wallet-provider"
+import { useNavigate } from "react-router-dom"
 
 const MULTISIG_CODE_ID = 595
 const MULTISIG_CODE_ID_TESTNET = 15690
@@ -65,6 +66,7 @@ interface MultisigFormElement extends HTMLFormElement {
 
 const CreateMultisig: NextPage = () => {
   const router = useRouter()
+  const navigate = useNavigate()
   const [count, setCount] = useState(2)
   const [contractAddress, setContractAddress] = useState("")
   const [error, setError] = useState("")
@@ -253,7 +255,7 @@ const CreateMultisig: NextPage = () => {
               className="mt-4 box-border px-4 py-2 btn btn-primary"
               onClick={(e) => {
                 e.preventDefault()
-                router.push(`/${encodeURIComponent(contractAddress)}`)
+                navigate(`/${encodeURIComponent(contractAddress)}`)
               }}
             >
               View Multisig &#8599;

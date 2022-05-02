@@ -7,6 +7,7 @@ import { useState, useEffect, useMemo } from "react"
 import { useRouter } from "utils/hooks/useRouter"
 import ProposalCard from "components/ProposalCard"
 import { ProposalListResponse, ProposalResponse, Timestamp } from "types/cw3"
+import { useNavigate } from "react-router-dom"
 
 // TODO: review union Expiration from types/cw3
 type Expiration = {
@@ -15,6 +16,7 @@ type Expiration = {
 
 const Home: NextPage = () => {
   const router = useRouter()
+  const navigate = useNavigate()
   const multisigAddress = router.query.multisigAddress as string
 
   const connectedWallet = useConnectedWallet()
@@ -75,7 +77,7 @@ const Home: NextPage = () => {
           <button
             className="btn btn-primary btn-sm text-lg"
             onClick={() =>
-              router.push(`/${encodeURIComponent(multisigAddress)}/create`)
+              navigate(`/${encodeURIComponent(multisigAddress)}/create`)
             }
           >
             + Create

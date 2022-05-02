@@ -4,7 +4,7 @@ import { useRouter } from "utils/hooks/useRouter"
 import WalletLoader from "components/WalletLoader"
 import { useNavigate } from "react-router-dom"
 
-const Home: NextPage = () => {
+const Home = () => {
   const router = useRouter()
   const navigate = useNavigate()
   console.log(router)
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           <div className="w-full max-w-xl xl:max-w-2xl">
             <button
               className="btn btn-primary btn-lg font-semibold hover:text-base-100 text-2xl rounded-full w-full"
-              onClick={() => router.push("/create")}
+              onClick={() => navigate("/create")}
             >
               + CREATE NEW MULTISIG
             </button>

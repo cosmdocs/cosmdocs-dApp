@@ -7,6 +7,7 @@ import LineAlert from "components/LineAlert"
 import { VoteInfo, ProposalResponse } from "types/cw3"
 import { LCDClient, MsgExecuteContract } from "@terra-money/terra.js"
 import { useConnectedWallet } from "@terra-money/wallet-provider"
+import { useNavigate } from "react-router-dom"
 
 function VoteButtons({
   onVoteYes = () => {},
@@ -68,6 +69,7 @@ function VoteButtons({
 
 const Proposal: NextPage = () => {
   const router = useRouter()
+  const navigate = useNavigate()
   const multisigAddress = router.query.multisigAddress as string
   const proposalId = router.query.proposalId as string
 
@@ -228,7 +230,7 @@ const Proposal: NextPage = () => {
                 onVoteNo={handleVote.bind(null, "no")}
                 onBack={(e) => {
                   e.preventDefault()
-                  router.push(`/${multisigAddress}`)
+                  navigate(`/${multisigAddress}`)
                 }}
                 votes={votes}
                 walletAddress={connectedWallet?.walletAddress}
@@ -254,7 +256,7 @@ const Proposal: NextPage = () => {
                     className="box-border px-4 py-2 rounded bg-gray-500 hover:bg-gray-600 text-white"
                     onClick={(e) => {
                       e.preventDefault()
-                      router.push(`/${multisigAddress}`)
+                      navigate(`/${multisigAddress}`)
                     }}
                   >
                     {"< Proposals"}

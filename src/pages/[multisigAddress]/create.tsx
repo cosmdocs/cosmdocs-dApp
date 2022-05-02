@@ -7,6 +7,7 @@ import cloneDeep from "lodash.clonedeep"
 import { useConnectedWallet } from "@terra-money/wallet-provider"
 import { MsgExecuteContract } from "@terra-money/terra.js"
 import Select from "react-select"
+import { useNavigate } from "react-router-dom"
 
 const templates = {
   bank: ({
@@ -98,6 +99,7 @@ interface ProposalFormElement extends HTMLFormElement {
 
 const ProposalCreate: NextPage = () => {
   const router = useRouter()
+  const navigate = useNavigate()
   const multisigAddress = (router.query.multisigAddress || "") as string
   const [transactionHash, setTransactionHash] = useState("")
   const [error, setError] = useState("")
@@ -428,7 +430,7 @@ const ProposalCreate: NextPage = () => {
                   className="mt-4 box-border px-4 py-2 btn btn-primary"
                   onClick={(e) => {
                     e.preventDefault()
-                    router.push(`/${multisigAddress}/`)
+                    navigate(`/${multisigAddress}/`)
                   }}
                 >
                   View Proposals &#8599;
