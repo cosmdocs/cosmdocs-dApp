@@ -1,8 +1,9 @@
 module.exports = {
   mode: 'jit',
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   purge: {
     content: [
-      './src/**/*.{js,ts,jsx,tsx}'
+      './src/**/*.{js,ts,jsx,tsx}',
     ],
     options: {
       safelist: [/data-theme$/],

@@ -1,4 +1,4 @@
-const { override } = require("customize-cra");
+const { override ,addPostcssPlugins} = require("customize-cra");
 
 const supportMjs = () => (webpackConfig) => {
     webpackConfig.module.rules.push({
@@ -10,5 +10,6 @@ const supportMjs = () => (webpackConfig) => {
 };
 
 module.exports = override(
-    supportMjs()
+    supportMjs(),
+    addPostcssPlugins([require('tailwindcss')])
 );

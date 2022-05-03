@@ -77,9 +77,9 @@ export const useNav = () => {
       icon: <WalletIcon {...ICON_SIZE} />,
     },
     {
-      path: "/templates",
+      path: "/multisig",
       element: <Home />,
-      title: t("Templates"),
+      title: t("Multisig"),
       icon: <WalletIcon {...ICON_SIZE} />,
     },
     {

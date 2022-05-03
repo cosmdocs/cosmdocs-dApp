@@ -11,7 +11,7 @@ import { BRIDGE } from "config/constants"
 import { debug } from "utils/env"
 
 import "./index.scss"
-import "./styles/globals.css"
+import "./globals.css"
 import ScrollToTop from "app/ScrollToTop"
 import InitNetworks from "app/InitNetworks"
 import InitWallet from "app/InitWallet"
