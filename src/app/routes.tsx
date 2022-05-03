@@ -82,12 +82,12 @@ export const useNav = () => {
       title: t("Multisig"),
       icon: <WalletIcon {...ICON_SIZE} />,
     },
-    {
-      path: "/models",
-      element: <Models />,
-      title: t("Models"),
-      icon: <WalletIcon {...ICON_SIZE} />,
-    },
+    // {
+    //   path: "/models",
+    //   element: <Models />,
+    //   title: t("Models"),
+    //   icon: <WalletIcon {...ICON_SIZE} />,
+    // },
     {
       path: "/history",
       element: <History />,
