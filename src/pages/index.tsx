@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useRouter } from "utils/hooks/useRouter"
 import WalletLoader from "components/WalletLoader"
 import { useNavigate } from "react-router-dom"
+import "../styles/globals.css"
 
 const Home = () => {
   const router = useRouter()
