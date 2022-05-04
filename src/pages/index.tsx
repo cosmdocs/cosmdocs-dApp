@@ -21,7 +21,7 @@ const Home = () => {
               <input
                 id="multisig-address"
                 className="input input-bordered focus:input-primary input-lg w-full pr-24 rounded-full text-center font-mono text-lg"
-                placeholder="Multisig contract address..."
+                placeholder="Csign contract address..."
                 step="0.1"
                 value={address}
                 onKeyDown={(event) => {
@@ -53,7 +53,7 @@ const Home = () => {
               className="btn btn-primary btn-lg font-semibold hover:text-base-100 text-2xl rounded-full w-full"
               onClick={() => navigate("/create")}
             >
-              + CREATE NEW MULTISIG
+              + CREATE NEW CSIGN
             </button>
           </div>
         </div>

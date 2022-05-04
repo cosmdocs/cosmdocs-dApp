@@ -163,7 +163,7 @@ const CreateMultisig: NextPage = () => {
   return (
     <WalletLoader>
       <div className="text-center container mx-auto max-w-lg">
-        <h1 className="text-5xl font-bold mb-8">New Multisig</h1>
+        <h1 className="text-5xl font-bold mb-8">New Csign</h1>
         <form
           className="container mx-auto max-w-lg mb-8"
           onSubmit={handleSubmit}
@@ -241,7 +241,7 @@ const CreateMultisig: NextPage = () => {
               type="submit"
               disabled={loading}
             >
-              Create Multisig
+              Create Csign
             </button>
           )}
         </form>
@@ -258,7 +258,7 @@ const CreateMultisig: NextPage = () => {
                 navigate(`/${encodeURIComponent(contractAddress)}`)
               }}
             >
-              View Multisig &#8599;
+              View Csign &#8599;
             </button>
           </div>
         )}

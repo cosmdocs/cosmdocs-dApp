@@ -35,7 +35,7 @@ function WalletLoader({
 
   if (status !== "WALLET_CONNECTED") {
     return (
-      <div className="max-w-full">
+      <div className="max-w-full" style={{ textAlign: "center" }}>
         <h1 className="text-6xl font-bold">Welcome</h1>
         <div className="flex flex-wrap items-center justify-around md:max-w-4xl mt-6 sm:w-full"></div>
         <div className="flex flex-wrap items-center justify-around md:max-w-4xl mt-6 sm:w-full">

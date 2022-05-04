@@ -16,6 +16,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import JsonInput from '../inputs/JsonInput';
 import { Form, Divider, Grid, Button, Tab, Icon } from 'semantic-ui-react';
+import { Navigate } from "react-router"
 
 class ExecuteForm extends Form {
   constructor(props) {
@@ -57,7 +58,7 @@ class ExecuteForm extends Form {
     return (
       <Tab.Pane>
         <Button size="small" type="submit" onClick={this.handleInitLogic} compact><Icon name="redo" flipped="horizontally" /> Initialize</Button>
-        <Button size="small" type="submit" onClick={this.handleRunLogic} compact><Icon name="send" /> Trigger</Button>
+        <a href="/csign" target="_blank"><Button size="small" type="submit" onClick={this.handleRunLogic} compact><Icon name="send" /> Trigger</Button></a>
         <Grid>
           <Divider hidden />
           <Grid.Row columns={2}>
