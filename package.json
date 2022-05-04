@@ -36,6 +36,7 @@
     "buffer": "^6.0.3",
     "classnames": "^2.3.1",
     "codemirror": "^5.58.2",
+    "core-js": "^3.22.4",
     "crypto-js": "^4.1.1",
     "customize-cra": "^1.0.0",
     "daisyui": "^1.14.0",
