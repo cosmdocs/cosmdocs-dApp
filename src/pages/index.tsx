@@ -53,7 +53,7 @@ const Home = () => {
               className="btn btn-primary btn-lg font-semibold hover:text-base-100 text-2xl rounded-full w-full"
               onClick={() => navigate("/create")}
             >
-              + CREATE NEW CSIGN
+              + CREATE NEW C-SIGN
             </button>
           </div>
         </div>

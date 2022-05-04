@@ -121,7 +121,7 @@ const Home: NextPage = () => {
       <div className="flex flex-wrap items-center justify-around md:max-w-4xl mt-6 sm:w-full">
         <a
           rel="noopener noreferrer"
-          href={`https://finder.extraterrestrial.money/columbus-5/address/${multisigAddress}`}
+          href={`https://finder.terra.money/columbus-5/address/${multisigAddress}`}
           target="_blank"
         >
           <h3 className="text-2xl font-bold">Block explorer &rarr;</h3>
