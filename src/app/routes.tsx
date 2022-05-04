@@ -6,6 +6,7 @@ import { ReactComponent as WalletIcon } from "styles/images/menu/Wallet.svg"
 import { ReactComponent as NFTIcon } from "styles/images/menu/NFT.svg"
 import { ReactComponent as HistoryIcon } from "styles/images/menu/History.svg"
 import { ReactComponent as ContractIcon } from "styles/images/menu/Contract.svg"
+import { ReactComponent as GovernanceIcon } from "styles/images/menu/Governance.svg"
 
 /* menu */
 import Dashboard from "pages/dashboard/Dashboard"
@@ -77,10 +78,10 @@ export const useNav = () => {
       icon: <WalletIcon {...ICON_SIZE} />,
     },
     {
-      path: "/multisig",
+      path: "/csign",
       element: <Home />,
-      title: t("Multisig"),
-      icon: <WalletIcon {...ICON_SIZE} />,
+      title: t("C-Sign"),
+      icon: <GovernanceIcon {...ICON_SIZE} />,
     },
     // {
     //   path: "/models",

@@ -1,6 +1,10 @@
 module.exports = {
   mode: 'jit',
-  // content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './src/components/*.{js,ts,jsx,tsx}',
+    './src/pages/*.{js,ts,jsx,tsx}',
+    './src/pages/[multisigAddress]/*.{js,ts,jsx,tsx}',
+  ],
   purge: {
     content: [
       './src/components/*.{js,ts,jsx,tsx}',

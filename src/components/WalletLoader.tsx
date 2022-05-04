@@ -43,7 +43,8 @@ function WalletLoader({
             className="p-6 mt-6 text-left border border-secondary hover:border-primary w-96 rounded-xl hover:text-primary focus:text-primary-focus"
             onClick={() => connect(ConnectType.WALLETCONNECT)}
           >
-            <h3 className="text-2xl font-bold">WalletConnect &rarr;</h3>
+            <h3 className="text-2xl font-bold">WalletConnect &rarr;&#10;</h3>
+            <br />
             <p className="mt-4 text-xl">
               Manage Your Legal Contracts By Connecting Your CosmDocs Ledger.
             </p>
